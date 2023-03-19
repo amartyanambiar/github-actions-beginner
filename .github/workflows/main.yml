@@ -28,4 +28,6 @@ jobs:
           git checkout -b amartya
           git add out.csv
           git commit -m 'Update output'
-          git push origin amartya
+          git fetch origin amartya
+          git merge origin/amartya
+          git push -u origin amartya
