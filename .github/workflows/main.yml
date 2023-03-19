@@ -28,5 +28,5 @@ jobs:
           git add out.csv
           git commit -m 'Update output'
           git checkout -b output
-          git fetch origin output
+          git pull origin output
           git push origin output
