@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --global user.name 'amartyanambiar'
           git config --global user.email 'amartyanambiar@gmail.com'
-          git add .
+          git add out.csv
           git commit -m 'Update output'
           git checkout -b output
           git push origin output
