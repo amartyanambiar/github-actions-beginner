@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
 env:
-  BRANCH_NAME: amartya1
+  BRANCH_NAME: amartya2
 jobs:
   first_action:
     runs-on: ubuntu-latest
