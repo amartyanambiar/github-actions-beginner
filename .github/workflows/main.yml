@@ -3,7 +3,8 @@ name: Your First Action
 on:
   push:
     branches: [main]
-
+env:
+  BRANCH_NAME: amartya1
 jobs:
   first_action:
     runs-on: ubuntu-latest
@@ -25,8 +26,7 @@ jobs:
         run: |
           git config --global user.name 'amartyanambiar'
           git config --global user.email 'amartyanambiar@gmail.com'
-          git checkout -b amartya
-          git pull origin amartya --allow-unrelated-histories
+          git checkout -b $BRANCH_NAME
           git add out.csv
           git commit -m 'Update output'
-          git push -u origin amartya
+          git push -u origin $BRANCH_NAME
