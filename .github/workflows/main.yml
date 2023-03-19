@@ -12,9 +12,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: main
-          path: out.csv
 
       - name: Install dependencies
         run: |
