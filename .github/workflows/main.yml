@@ -26,8 +26,7 @@ jobs:
           git config --global user.name 'amartyanambiar'
           git config --global user.email 'amartyanambiar@gmail.com'
           git checkout -b amartya
+          git pull origin amartya --allow-unrelated-histories
           git add out.csv
           git commit -m 'Update output'
-          git fetch origin amartya
-          git merge origin/amartya
           git push -u origin amartya
